@@ -1,20 +1,8 @@
+@import fonts
 @import config
+@import variables
 
 // CUSTOM USER STYLES & IMPORTS
-
-@font-face
-    font-family: 'Conv_cambriab'
-    src: url('../fonts/cambriab.eot')
-    src: local('☺'), url('../fonts/cambriab.woff') format('woff'), url('../fonts/cambriab.ttf') format('truetype'), url('../fonts/cambriab.svg') format('svg')
-    font-weight: normal
-    font-style: normal
-
-@font-face
-    font-family: 'Conv_arial'
-    src: url('../fonts/arial.eot')
-    src: local('☺'), url('../fonts/arial.woff') format('woff'), url('../fonts/arial.ttf') format('truetype'), url('../fonts/arial.svg') format('svg')
-    font-weight: normal
-    font-style: normal
 
 .promotion
     background: url(../images/src/bg_promotion.png) center center no-repeat
@@ -54,15 +42,15 @@
         position: relative
         z-index: 2
     &__procent
-        font-family: 'Conv_cambriab'
+        font-family: $basic-font
         font-weight: 700
         font-size: 208.5px
-        color: #ffffff
+        color: $white
         line-height: 1
     &__welcome
-        font-family: 'Conv_cambriab'
+        font-family: $basic-font
         font-size: 68.5px
-        color: #ffffff
+        color: $white
         text-transform: uppercase
         margin-bottom: 55px
         line-height: 1
@@ -72,52 +60,48 @@
         align-items: center
         margin-bottom: 60px
     &__discount
-        font-family: 'Conv_arial'
+        font-family: $additional-font
         font-size: 40px
-        color: #f73427
+        color: $red
         text-transform: uppercase
         letter-spacing: 3px
         padding: 6px 25px 7px 25px
-        border-right: 2px solid  #464646
-        border-top: 2px dashed #464646
-        border-bottom: 2px dashed #464646
-        border-left: 2px dashed #464646
+        border-right: 2px solid  $dark-gray
+        border-top: 2px dashed $dark-gray
+        border-bottom: 2px dashed $dark-gray
+        border-left: 2px dashed $dark-gray
         border-top-left-radius: 50px
         border-bottom-left-radius: 50px
     &__copy
-        font-family: 'Conv_arial'
+        font-family: $additional-font
         font-size: 18px
-        color: #ffffff
+        color: $white
         letter-spacing: 3px
         text-transform: uppercase
         cursor: pointer
         padding: 25px
-        border-right: 2px dashed  #464646
-        border-top: 2px dashed #464646
-        border-bottom: 2px dashed #464646
+        border-right: 2px dashed  $dark-gray
+        border-top: 2px dashed $dark-gray
+        border-bottom: 2px dashed $dark-gray
         border-top-right-radius: 50px
         border-bottom-right-radius: 50px
-        transition: .5s
+        transition: color .5s
         &:hover
-            letter-spacing: 4px
-            color: #ffd700
-            transition: .5s
+            color: $gold
     &__btn
         font-size: 20px
         font-weight: 700
-        color: #ffffff
+        color: $white
         text-transform: uppercase
         letter-spacing: 3px
         padding: 20px 110px
-        background: #f73427
+        background: $red
         border-radius: 100px 100px
         margin: 0 auto
         border: none
-        transition: .5s
+        transition: color .5s
         &:hover
-            font-size: 24px
-            color: #ffd700
-            transition: .5s
+            color: $gold
     &__footer
         display: flex
         justify-content: space-between
@@ -177,24 +161,22 @@
         &__discount
             font-size: 23px
             letter-spacing: 1px
-            padding: 3px 12.5px 3.5px 12.5px
-            border-right: 2px solid  #949393
-            border-top: 2px dashed #949393
-            border-bottom: 2px dashed #949393
-            border-left: 2px dashed #949393
+            padding: 2px 12px 2px 12px
+            border-right: 2px solid  $gray
+            border-top: 2px dashed $gray
+            border-bottom: 2px dashed $gray
+            border-left: 2px dashed $gray
         &__copy
             font-size: 11px
             letter-spacing: 1.5px
-            padding: 12.5px
-            border-right: 2px dashed  #949393
-            border-top: 2px dashed #949393
-            border-bottom: 2px dashed #949393
+            padding: 12px
+            border-right: 2px dashed  $gray
+            border-top: 2px dashed $gray
+            border-bottom: 2px dashed $gray
         &__btn
             font-size: 12px
             font-weight: 700
             letter-spacing: 1.5px
             padding: 12px 60px
-            &:hover
-                font-size: 15px
         &__apply
-            color: #949393
+            color: $gray
